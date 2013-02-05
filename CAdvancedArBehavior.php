@@ -146,7 +146,7 @@ class CAdvancedArbehavior extends CActiveRecordBehavior
 					else
 					{
 						$info['m2mTable'] = $relation->foreignKey;
-						$info['m2mThisField'] = $this->owner->tableSchema->PrimaryKey;
+						$info['m2mThisField'] = $this->owner->tableSchema->primaryKey;
 						$info['m2mForeignField'] = CActiveRecord::model($relation->className)->tableSchema->primaryKey;
 					}
 				$relations[$key] = $info;
